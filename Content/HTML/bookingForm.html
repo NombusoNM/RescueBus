@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RescueBus</title>
+    <link rel="stylesheet" href="/Content/CSS/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">RescueBus</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rideHistory.html">Ride History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage.html">Manage</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- FORM CONTENT -->
+    <div class="booking-card">
+        <div class="booking-title">
+            <div class="mb-2" style="font-size: 40px;">🚑</div>
+            <h2>Advanced Life Support</h2>
+        </div>
+
+        <form>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label class="form-label">Full Name*</label>
+                    <input type="text" class="form-control" placeholder="Nombuso Mdletshe">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Phone*</label>
+                    <input type="tel" class="form-control" placeholder="+27 12 345 678">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Pick-Up Time*</label>
+                    <input type="time" class="form-control">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Reason*</label>
+                    <select class="form-select">
+                        <option selected disabled>Select reason</option>
+                        <option>Accident</option>
+                        <option>Emergency</option>
+                        <option>Transfer</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Vehicle*</label>
+                    <select class="form-select">
+                        <option selected disabled>-- Select Vehicle --</option>
+                        <option>Type I</option>
+                        <option>Type II</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Driver*</label>
+                    <select class="form-select">
+                        <option selected disabled>-- Select Driver --</option>
+                        <option>John Carter</option>
+                        <option>Jane Smith</option>
+                    </select>
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label">Pick-Up Address</label>
+                    <textarea class="form-control" rows="3" placeholder="Please type your address here..."></textarea>
+                </div>
+
+                <div class="col-12">
+                    <a href="bookingConfirmed.html" class="submit-btn d-block text-center text-decoration-none">Book Ambulance</a>
+                </div>
+            </div>
+        </form>
+
+        <p class="required-note">Fields marked with * are required fields</p>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="/Content/Javascript/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
